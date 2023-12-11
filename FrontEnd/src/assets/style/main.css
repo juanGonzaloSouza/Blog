@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     max-width: 1440px;
     margin: auto;
 }
-
 
 .sr-only {
     position: absolute;
@@ -19,3 +17,8 @@
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+.max-width-container {
+    max-width: 100vw;
+    margin: 0 auto;
+  }

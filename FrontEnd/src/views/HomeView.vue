@@ -1,6 +1,6 @@
-<template>
+<template >
   <NavBar />
-  <main>
+  <main class="template">
     <section class="main-section">
       <article>
         <p>Make better
@@ -18,8 +18,8 @@
 </template>
 
 <script>
+import NavBar from '../components/NavBar/NavBar.vue';
 import BlogCard from '../components/BlogCard/BlogCard.vue';
-import NavBar from '../components/NavBar/Navbar.vue';
 export default {
   components: {
     BlogCard,
@@ -32,8 +32,10 @@ export default {
 .main-section {
   background: #FBFBFB;
   width: 100vw;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
 }
+
 
 .main-section>article>p {
   color: #000;
