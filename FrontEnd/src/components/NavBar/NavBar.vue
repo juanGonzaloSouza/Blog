@@ -41,21 +41,26 @@
 <style scoped>
 nav {
     height: 4rem;
-    width: 100vw;
+    width: 96vw;
     background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 4rem;
+    margin: 0 2vw;
+    margin: auto;
+    background-color: red;
 }
 
-nav .logo-bar {}
+nav .logo-bar {
+    width: 20vw;
+}
 
 nav .logo-bar img {
     height: 4rem;
 }
 
 nav .search-bar {
+
     width: 20vw;
     display: flex;
     flex-direction: row;
@@ -63,9 +68,46 @@ nav .search-bar {
     align-items: center;
 }
 
+nav .search-bar i {
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+
+nav .search-bar input {
+    color: var(--600, #718096);
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    border: none;
+    width: 6rem;
+
+}
+
 nav .navegation-bar {
     display: flex;
     flex-direction: row;
+    width: 20vw;
+}
 
+nav .navegation-bar article ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav .navegation-bar article ul li {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
 }
 </style>

@@ -31,6 +31,8 @@ export default {
 <style scoped>
 .main-section {
   background: #FBFBFB;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .main-section>article>p {
