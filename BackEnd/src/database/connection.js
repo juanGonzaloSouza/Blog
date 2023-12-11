@@ -35,8 +35,8 @@ const executeQuery = async (query, params) => {
         connection = await pool.getConnection();
         // console.log('Connected to the database');
         // console.log('Database config:', dbConfig);
-        console.log('Query:', query);
-        console.log('Params:', params);
+        // console.log('Query:', query);
+        // console.log('Params:', params);
         const [results] = await connection.execute(query, params);
         return results;
     } catch (error) {
@@ -45,7 +45,7 @@ const executeQuery = async (query, params) => {
     } finally {
         try {
             if (connection) {
-                console.log('Releasing connection');
+                // console.log('Releasing connection');
                 connection.release();
             }
         } catch (error) {

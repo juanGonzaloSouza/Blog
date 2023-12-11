@@ -1,16 +1,16 @@
 <template>
     <nav role="navigation">
 
-        <section>
-            <img src="../../assets/icons/black-logo.png" alt="Logo de la empresa.">
+        <section class="logo-bar">
+            <img src="../../assets/icons/default-logo.png" alt="Logo de la empresa.">
         </section>
 
-        <section>
+        <section class="search-bar">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" id="searchValue" placeholder="Search...">
         </section>
 
-        <section>
+        <section class="navegation-bar">
             <article>
                 <ul>
                     <li>Home</li>
@@ -38,7 +38,34 @@
     </nav>
 </template>
 
-<script>
+<style scoped>
+nav {
+    height: 4rem;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 4rem;
+}
 
+nav .logo-bar {}
 
-</script>
+nav .logo-bar img {
+    height: 4rem;
+}
+
+nav .search-bar {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .navegation-bar {
+    display: flex;
+    flex-direction: row;
+
+}
+</style>
