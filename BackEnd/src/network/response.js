@@ -1,15 +1,16 @@
-exports.success = function (req, res, message = '', status = '200') {
-    res.status(status).send({
-        error: false,
-        status: status,
-        body: message
-    })
+function success(req, res, message, data, status = 200) {
+    res.status(status).json({
+        success: true,
+        message,
+        data
+    });
 }
 
-exports.error = function (req, res, message = 'Internal Error', status = '500') {
-    res.status(status).send({
-        error: true,
-        status: status,
-        body: message
-    })
+function error(req, res, message, status = 500) {
+    res.status(status).json({
+        success: false,
+        message,
+    });
 }
+
+module.exports = { success, error };

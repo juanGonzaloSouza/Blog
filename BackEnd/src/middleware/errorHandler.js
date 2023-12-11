@@ -1,3 +1,5 @@
+// errorHandler.js
+
 function error(message, code) {
     let e = new Error(message);
 
