@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav role="navigation" class=".max-width-container">
+        <nav role="navigation">
 
             <section class="logo-bar">
                 <img src="../../assets/icons/default-logo.png" alt="Logo de la empresa.">
@@ -48,12 +48,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo-bar {
-    width: 10vw;
-    display: flex;
-    justify-content: left;
+    background-color: red;
+    left: 0;
 }
 
 nav .logo-bar img {
@@ -90,6 +90,8 @@ nav .navegation-bar {
     display: flex;
     flex-direction: row;
     width: 10vw;
+    justify-content: center;
+    align-items: center;
 }
 
 nav .navegation-bar article ul {
