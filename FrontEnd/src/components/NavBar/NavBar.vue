@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav role="navigation">
+        <nav role="navigation" class="container">
 
             <section class="logo-bar">
                 <img src="../../assets/icons/default-logo.png" alt="Logo de la empresa.">
@@ -41,6 +41,11 @@
 </template>
 
 <style scoped>
+header {
+    width: 100vw;
+    background-color: #fff;
+}
+
 nav {
     height: 4rem;
     width: 95%;

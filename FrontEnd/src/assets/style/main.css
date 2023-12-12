@@ -3,8 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 1440px;
     margin: auto;
+
 }
 
 .sr-only {
@@ -18,3 +18,6 @@
     border: 0;
 }
 
+.container {
+    max-width: 1440px;
+}
