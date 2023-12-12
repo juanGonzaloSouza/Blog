@@ -1,26 +1,19 @@
-
-
-
 <template>
     <section :class="['card', type + '-card']">
         <article>
-            <img src="../../assets/imgs/cards/card_1.png" alt="Imagen ilustrativa para la carta asociada.">
+            <img :src="imageUrl" alt="Imagen ilustrativa para la carta asociada.">
         </article>
-
         <article class="card-content">
-
             <h3>
                 <!-- {{ title }} -->
                 Titulo
             </h3>
-
             <p>
                 <!-- {{ description }} -->
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repudiandae sequi. Delectus veritatis
                 voluptatum quasi, sint, ducimus velit placeat, eos nemo dicta dolores inventore omnis maiores tenetur
                 blanditiis laudantium soluta?
             </p>
-
             <div>
                 <p>May 05th 2005</p>
                 <!-- <p>{{ date }}</p> -->
@@ -33,13 +26,49 @@
   
 <script>
 export default {
+    name: 'BlogCard',
     props: {
         type: {
             type: String,
             default: 'large',
             validator: (value) => ['simple', 'medium', 'large'].includes(value),
         },
-        imageUrl: String,
+        times: Number,
+    },
+    data() {
+        return {
+            imageUrl: '',
+            options: [
+                '/src/assets/imgs/cards/card_4.png',
+                '/src/assets/imgs/cards/card_2.png',
+                '/src/assets/imgs/cards/card_5.png',
+                '/src/assets/imgs/cards/card_1.png',
+                '/src/assets/imgs/cards/card_3.png',
+            ],
+        };
+    },
+    created() {
+        this.updateImageUrl();
+    },
+    methods: {
+        updateImageUrl() {
+            const index = parseInt(this.times, 10);
+            if (this.type === 'simple') {
+                if (index === 0) {
+                    this.imageUrl = this.options[2];
+                } else if (index === 1) {
+                    this.imageUrl = this.options[1];
+                } else if (index === 2) {
+                    this.imageUrl = this.options[0];
+                } else {
+                    this.imageUrl = this.options[2]; 
+                }
+            } else if (this.type === 'medium') {
+                this.imageUrl = this.options[3];
+            } else {
+                this.imageUrl = this.options[4];
+            }
+        },
     },
 };
 </script>
@@ -121,6 +150,8 @@ export default {
     width: 4.6rem;
     background-color: transparent;
     cursor: pointer;
+    margin-top: 2rem;
+
 }
 
 .simple-card .card-content div>p {
@@ -131,6 +162,7 @@ export default {
     font-weight: 400;
     line-height: normal;
     width: 5.75rem;
+    margin-top: 2rem;
 }
 
 .medium-card {
@@ -203,6 +235,8 @@ export default {
     width: 4.6rem;
     background-color: transparent;
     cursor: pointer;
+    margin-top: 2.5rem;
+
 }
 
 .medium-card .card-content div>p {
@@ -213,6 +247,8 @@ export default {
     font-weight: 400;
     line-height: normal;
     width: 5.75rem;
+    margin-top: 2.5rem;
+
 }
 
 
@@ -283,6 +319,7 @@ export default {
     width: 7.6rem;
     background-color: transparent;
     cursor: pointer;
+    margin-top: 3rem;
 }
 
 .large-card .card-content div>p {
@@ -293,6 +330,7 @@ export default {
     font-weight: 400;
     line-height: normal;
     width: 7.75rem;
+    margin-top: 3rem;
 }
 </style>
   

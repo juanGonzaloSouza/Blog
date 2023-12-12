@@ -39,16 +39,29 @@
         </nav>
     </header>
 </template>
-
+<script>
+export default {
+    name: 'NavBar',
+    data() {
+        return {
+        };
+    },
+    methods: {
+    },
+};
+</script>
 <style scoped>
 header {
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
+    height: 4rem;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 nav {
-    height: 4rem;
     width: 95%;
+    height: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: row;
@@ -57,7 +70,6 @@ nav {
 }
 
 nav .logo-bar {
-    background-color: #ccc;
     left: 0;
 }
 
@@ -116,4 +128,6 @@ nav .navegation-bar article ul li {
     align-items: center;
     margin: 1em;
 }
+
+
 </style>

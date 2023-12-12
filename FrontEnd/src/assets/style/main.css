@@ -21,3 +21,8 @@
 .container {
     max-width: 1440px;
 }
+
+i,
+.link {
+    cursor: pointer;
+}
