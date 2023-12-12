@@ -52,7 +52,7 @@ nav {
 }
 
 nav .logo-bar {
-    background-color: red;
+    background-color: #ccc;
     left: 0;
 }
 
