@@ -14,8 +14,8 @@
             <section class="navegation-bar">
                 <article>
                     <ul>
-                        <li>Home</li>
-                        <li>Articles</li>
+                        <router-link to="/" class="link">Home</router-link>
+                        <router-link to="/articles" class="link">Articles</router-link>
                     </ul>
                 </article>
                 <article>
@@ -56,7 +56,7 @@ header {
     background-color: #fff;
     height: 4rem;
     border-bottom: 1px solid #ddd;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -117,7 +117,8 @@ nav .navegation-bar article ul {
     flex-direction: row;
 }
 
-nav .navegation-bar article ul li {
+nav .navegation-bar article ul .link,
+nav .navegation-bar article ul li{
     color: #000;
     font-family: Inter;
     font-size: 1.25rem;
@@ -127,7 +128,6 @@ nav .navegation-bar article ul li {
     justify-content: space-between;
     align-items: center;
     margin: 1em;
+    text-decoration: none;
 }
-
-
 </style>
