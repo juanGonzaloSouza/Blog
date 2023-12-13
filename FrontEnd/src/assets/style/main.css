@@ -26,3 +26,21 @@ i,
 .link {
     cursor: pointer;
 }
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #b8b8b8 #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border-radius: 10px;
+}

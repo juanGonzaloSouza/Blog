@@ -3,7 +3,9 @@
         <nav role="navigation" class="container">
 
             <section class="logo-bar">
-                <img src="../../assets/icons/default-logo.png" alt="Logo de la empresa.">
+                <router-link to="/" class="link">
+                    <img src="../../assets/icons/default-logo.png" alt="Logo de la empresa.">
+                </router-link>
             </section>
 
             <section class="search-bar">
@@ -118,7 +120,7 @@ nav .navegation-bar article ul {
 }
 
 nav .navegation-bar article ul .link,
-nav .navegation-bar article ul li{
+nav .navegation-bar article ul li {
     color: #000;
     font-family: Inter;
     font-size: 1.25rem;

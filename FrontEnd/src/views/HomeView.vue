@@ -38,7 +38,7 @@ export default {
   components: {
     BlogCard,
     NavBar,
-    Footer
+    Footer,
   },
   data() {
     return {
@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
 .main-section {
-  background: #FBFBFB;
+  background: rgb(251, 251, 251);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
