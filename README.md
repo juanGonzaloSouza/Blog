@@ -6,23 +6,6 @@
 
 Este proyecto tiene como objetivo proporcionar un espacio práctico para aprender sobre el desarrollo web. Estoy utilizando Vue.js para crear la interfaz de usuario dinámica en el frontend.
 
-## Funcionalidades Planificadas
-
-### 1. CRUD de Artículos
-   - **Crear Artículo**: Agregaré la capacidad de crear nuevos artículos con título, contenido y más.
-   - **Leer Artículo**: Estoy trabajando en una interfaz para ver todos los artículos existentes y ver los detalles completos haciendo clic en uno.
-   - **Actualizar Artículo**: Los usuarios podrán editar artículos existentes y realizar cambios según sea necesario.
-   - **Eliminar Artículo**: Se podrá eliminar artículos de forma segura.
-
-### 2. CRUD de Usuarios
-   - **Registrar Usuario**: Implementaré la opción para que los usuarios creen cuentas con información básica.
-   - **Iniciar Sesión**: Estoy trabajando en un sistema de inicio de sesión seguro.
-   - **Actualizar Perfil**: Los usuarios podrán actualizar su información personal y cambiar contraseñas.
-
-### 3. Otras Funcionalidades
-   - **Comentarios en Artículos**: Implementaré un sistema de comentarios para fomentar la interacción.
-   - **Funcionalidades Adicionales**: Exploraré y agregaré funciones interesantes a medida que avance el proyecto.
-
 ## Instrucciones de Instalación
 
 1. Clona este repositorio en tu máquina local.
